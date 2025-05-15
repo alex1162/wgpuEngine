@@ -18,6 +18,9 @@ public:
 
     void look_at_entity(Node3D* entity);
 
+    void set_jittered_projection(const glm::mat4& proj);
+
+
 protected:
 
     float delta_yaw = 0.0f;

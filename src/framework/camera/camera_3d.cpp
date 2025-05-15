@@ -69,3 +69,8 @@ void Camera3D::look_at_entity(Node3D* entity)
 
     look_at(aabb.center - distance * front, aabb.center, glm::vec3(0.0, 1.0, 0.0));
 }
+
+void Camera3D::set_jittered_projection(const glm::mat4& proj) {
+    this->projection = proj;
+    update_view_projection_matrix(); 
+}
